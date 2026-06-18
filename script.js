@@ -59,8 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
       fetch(form.action, { method: 'POST', body: data, headers: { 'Accept': 'application/json' } })
         .then(function (res) {
           if (res.ok) {
-            alert('Thanks for reaching out! I will respond within 24 hours.');
-            form.reset();
+            window.location.href = 'https://calendly.com/vergel-emmanuel-mata/discovery-call';
           } else {
             alert('Something went wrong. Please try again or email me directly.');
           }
